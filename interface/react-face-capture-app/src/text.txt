@@ -1,0 +1,93 @@
+Global Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('C:\Users\HP\Desktop\epic\interface\react-face-capture-app\public\images\background2.jpg') no-repeat center center/cover; /* Add the background image */
+  color: #000000; /* Dark brown text */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Login Page Styles */
+.login-container {
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: right;
+  width: 350px;
+}
+
+h2 {
+  color: #000000;
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 20px;
+  font-family: 'Lucida Calligraphy', 'Lucida Sans', sans-serif;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 56px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffffff; /* Pumpkin color */
+  color: #000000;
+  border: none;
+  border-radius: 56px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #847e7e; /* Darker pumpkin color */
+}
+
+
+
+
+
+    import React, { useState } from 'react';
+import loginData from '../services/logindata.json';
+
+    function Login({ setIsAuthenticated }) {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleLogin = () => {
+        const user = loginData.users.find(u => u.username === username && u.password === password);
+        if (user) {
+        setIsAuthenticated(true);
+        } else {
+        alert("Invalid username or password");
+        }
+    };
+
+    return (
+        <div className="login">
+        <h2>Welcome!!</h2>
+        <input type="text" placeholder="Username" value={username} onChange={e => setUsername(e.target.value)} />
+        <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
+        <button onClick={handleLogin}>Login</button>
+        </div>
+    );
+    }
+
+    export default Login;

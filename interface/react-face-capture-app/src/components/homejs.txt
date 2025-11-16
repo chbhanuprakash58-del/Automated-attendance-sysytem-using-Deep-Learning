@@ -1,0 +1,99 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1272f0;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ffcc00;
+}
+
+/* Home Content */
+.home {
+  margin-top: 70px; /* Prevent overlap with the navbar */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Slideshow */
+/* Slideshow Container */
+.slideshow {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px; /* Set a larger width */
+  height: 300px;    /* Set a larger height */
+  overflow: hidden;
+  border-radius: 15px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow for a better look */
+}
+
+/* Slideshow Image */
+.slideshow-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 10px; /* Match the container's corners */
+}
+
+/* Slideshow Text */
+.slideshow-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Space Between Slideshow and Text Box */
+.home .slideshow {
+  margin-bottom: 30px; /* Add space below the slideshow */
+}
+
+/* Text Box */
+.text-box {
+  margin: 20px auto; /* Center the text box */
+  max-width: 800px; /* Same width as the slideshow */
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 10px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Space Between Text Box and Button */
+.home-buttons {
+  margin-top: 50px; /* Add space above the button */
+}

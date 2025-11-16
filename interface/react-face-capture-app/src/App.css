@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  font-family: 'Ink Free';
+  background: url('C:\Users\HP\Desktop\epic\interface\react-face-capture-app\public\images\background5.jpg') no-repeat center center/cover;;
+  filter: brightness(1.2); /* Dark shadow effect */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e7e4e4;
+}
+
+/*--------------------------------- Login Page------------------------------------ */
+/* Page */
+.login-page {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(0, 0, 0, 0.3); /* Black shadow background */
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+/* Left Block - Text Section */
+.text-block {
+  flex: 1;
+  padding: 50px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+}
+/* Welcome heading */
+.text-block h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+/* Student Attendance */
+.text-block p {
+  font-size: 40px;
+  line-height: 2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+/* Right side sign up block */
+.login-block {
+  flex: 1;
+  background-color: #8da9c4;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+}
+/* Sign up */
+.login-block h2 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+/* Input boxes */
+.login-block input {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #4a4e69;
+  border-radius: 20px;
+  font-size: 12px;
+}
+/* Login button */
+button {
+  padding: 12px 30px;
+  background-color: #415a77;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Ink Free';
+}
+/* Login button hover */
+button:hover {
+  background-color: #003554;
+}
+/* Forgot password? Contact Administrator */
+.login-block p {
+  font-size: 15px;
+  color: #000000;
+}
+
+
+
+/*---------------------------------Home page---------------------------------*/
+
+.home {
+  background-color: none;
+  border-radius: 25px;
+  padding: 25px;
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  width: 500px;
+  font-size: 50px;
+}
+
+.home h2 {
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Ink Free', 'Lucida Sans', 'Times New Roman';  /* Lucida font for welcome text */
+  font-size: 50px;
+}
+
+.home p{
+  color: black;
+  font-family: 'verdana';
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+
+.home-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  justify-content: center; /* Align vertically to the center */
+  align-items: center; /* Align horizontally to the center */
+  height: 150px; /* Take full viewport height */
+  margin: 0; /* Remove extra margins */
+}
+
+.home-buttons button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 100px;
+  color: #000000;
+  border: none;
+  padding: 20px 20px; /* Increased padding for larger buttons */
+  font-size: 25px; /* Larger font size */
+  width: auto; /* Buttons no longer take full width */
+  margin-bottom: 20px; /* Space between buttons */
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.9s ease;
+}
+
+.home-buttons button:hover {
+  background-color: #41bbe8;  /* Darker pumpkin color */
+}
+
+
+
+/* -----------------------------------Capture page-------------------------------------- */
+
+.capture div {
+  /* font-family: 'Ink Free', sans-serif;s */
+  background-color: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+/* Heading style */
+.capture h2 {
+  background-color: none;
+  color: #000000;
+  font-size: 70px;
+  margin-bottom: 30px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: 'Ink Free';
+  padding: 15px;
+}
+
+/* Text box styles for the three sentences */
+.capture p {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 80%;
+  border-radius: 15px;
+  color: #49657b;
+  font-family: 'verdana';
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Input field style */
+.capture input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #2a2929;
+  border-radius: 20px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.capture input:focus {
+  outline: none;
+  border-color: #757575;
+}
+
+/* Button style */
+.capture button {
+  padding: 12px 20px;
+  background-color: #aaaaaa;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.capture button:hover {
+  background-color: #ffefd7;
+}
+
+/* Button disabled style */
+.capture button:disabled {
+  background-color: #eaf2fe;
+  cursor: not-allowed;
+}
+
+/* Style for the input and button to be side by side */
+.capture .input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;  /* Add space between input and button */
+  width: 1000px;
+}
+
+/* For vertical alignment of textboxes and button */
+.capture .input-container input {
+  margin-bottom: 0;  /* Remove margin at the bottom to keep aligned with the button */
+}

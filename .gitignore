@@ -1,0 +1,20 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore dataset folder
+data/
+
+# Ignore Node.js modules
+node_modules/
+
+# Ignore specific files
+attendance.pub
+attendance.xlsx
+package.json
+package-lock.json
+siamese.h5
+siamese_accuracy_plot.png
+
+# Ignore all PNG and H5 files
+*.png
+*.h5
